@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocre Natural Premium | Pigmentos TierraColor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --ocre-light: #D2B48C;  /* Tonos de ocre */
+            --ocre-medium: #C19A6B;
+            --ocre-dark: #8B6B3D;
+            --cream: #F5F5DC;
+            --brown: #5C4033;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--brown);
+        }
+        
+        /* Header con gradiente ocre */
+        header {
+            background: linear-gradient(135deg, var(--ocre-medium), var(--ocre-dark));
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(92, 64, 51, 0.2);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--cream);
+        }
+        
+        /* Hero section con imagen de ocre */
+        .product-hero {
+            background: url('https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+        }
+        
+        .hero-content {
+            background: rgba(194, 154, 107, 0.85);  /* Fondo semitransparente ocre */
+            width: 100%;
+            padding: 2rem;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        /* Selector de tonalidades de ocre */
+        .color-options {
+            display: flex;
+            gap: 15px;
+            margin: 1.5rem 0;
+        }
+        
+        .color-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            transition: transform 0.3s;
+        }
+        
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Sección de producto */
+        .product-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .product-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            cursor: zoom-in;
+        }
+        
+        .product-gallery img:hover {
+            transform: scale(1.02);
+        }
+        
+        .main-image {
+            grid-column: span 2;
+        }
+        
+        /* Detalles del producto */
+        .product-details h1 {
+            color: var(--ocre-dark);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-type {
+            color: var(--ocre-medium);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            color: var(--ocre-dark);
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+        
+        .btn {
+            background: var(--ocre-dark);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn:hover {
+            background: var(--brown);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(92, 64, 51, 0.3);
+        }
+        
+        /* Características */
+        .features {
+            margin: 2rem 0;
+            border-top: 1px solid rgba(194, 154, 107, 0.3);
+            padding-top: 1.5rem;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .feature i {
+            color: var(--ocre-medium);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <span>TierraColor</span>
+            </div>
+            <nav>
+                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-search"></i></a>
+                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-user"></i></a>
+                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-shopping-cart"></i></a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="product-hero">
+        <div class="hero-content">
+            <h1>Ocre Natural Premium</h1>
+            <p>Pigmento 100% mineral para artistas y restauradores</p>
+            
+            <div class="color-options">
+                <div class="color-swatch" style="background-color: #F5DEB3;" title="Ocre claro"></div>
+                <div class="color-swatch" style="background-color: #D2B48C;" title="Ocre arena"></div>
+                <div class="color-swatch" style="background-color: #C19A6B;" title="Ocre dorado"></div>
+                <div class="color-swatch" style="background-color: #8B6B3D;" title="Ocre oscuro"></div>
+                <div class="color-swatch" style="background-color: #5C4033;" title="Ocre tostado"></div>
+            </div>
+        </div>
+    </section>
+    
+    <main class="product-container">
+        <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Ocre en polvo" class="main-image">
+            <img src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Textura del ocre">
+            <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Ocre aplicado">
+        </div>
+        
+        <div class="product-details">
+            <h1>Ocre Natural</h1>
+            <p class="product-type">Pigmento mineral en polvo</p>
+            
+            <div class="price">S/ 75.90</div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Extraído de yacimientos naturales</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>5 tonalidades disponibles</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Granulometría controlada (45 micras)</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Compatibilidad con múltiples aglutinantes</span>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="addToCart()">
+                <i class="fas fa-shopping-cart"></i>
+                Añadir al carrito
+            </button>
+            
+            <div class="product-description" style="margin-top: 2rem;">
+                <h3><i class="fas fa-info-circle" style="color: var(--ocre-medium);"></i> Descripción</h3>
+                <p>Nuestro ocre natural es un pigmento mineral obtenido mediante procesos artesanales que preservan sus cualidades cromáticas. Ideal para:</p>
+                <ul style="padding-left: 20px; line-height: 1.6;">
+                    <li>Pintura artística al óleo, acrílico o acuarela</li>
+                    <li>Restauración de bienes culturales</li>
+                    <li>Revestimientos arquitectónicos</li>
+                    <li>Elaboración de cerámicas</li>
+                </ul>
+                
+                <h3 style="margin-top: 1.5rem;"><i class="fas fa-flask" style="color: var(--ocre-medium);"></i> Composición</h3>
+                <p>Óxidos de hierro naturales (>95%), sílice (<3%), aluminio (<2%). Libre de aditivos químicos.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Interactividad
+        function addToCart() {
+            alert('Ocre añadido al carrito');
+            // Lógica real para añadir al carrito iría aquí
+        }
+        
+        // Cambiar imagen principal al hacer clic en miniaturas
+        document.querySelectorAll('.product-gallery img').forEach(img => {
+            img.addEventListener('click', function() {
+                if (!this.classList.contains('main-image')) {
+                    const mainImg = document.querySelector('.main-image');
+                    const tempSrc = mainImg.src;
+                    mainImg.src = this.src;
+                    this.src = tempSrc;
+                }
+            });
+        });
+        
+        // Selector de color interactivo
+        document.querySelectorAll('.color-swatch').forEach(swatch => {
+            swatch.addEventListener('click', function() {
+                const color = this.style.backgroundColor;
+                document.querySelector('.hero-content').style.backgroundColor = `rgba(${hexToRgb(color)}, 0.85)`;
+            });
+        });
+        
+        // Función auxiliar para convertir hex a rgb
+        function hexToRgb(hex) {
+            // Elimina el # si está presente
+            hex = hex.replace('#', '');
+            
+            // Convierte a valores RGB
+            const r = parseInt(hex.substring(0, 2), 16);
+            const g = parseInt(hex.substring(2, 4), 16);
+            const b = parseInt(hex.substring(4, 6), 16);
+            
+            return `${r}, ${g}, ${b}`;
+        }
+    </script>
+</body>
+</html>
