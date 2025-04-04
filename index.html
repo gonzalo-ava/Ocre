@@ -1,318 +1,476 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocre Natural Premium | Pigmentos TierraColor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --ocre-light: #D2B48C;  /* Tonos de ocre */
-            --ocre-medium: #C19A6B;
-            --ocre-dark: #8B6B3D;
-            --cream: #F5F5DC;
-            --brown: #5C4033;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--cream);
-            color: var(--brown);
-        }
-        
-        /* Header con gradiente ocre */
-        header {
-            background: linear-gradient(135deg, var(--ocre-medium), var(--ocre-dark));
-            color: white;
-            padding: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(92, 64, 51, 0.2);
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-right: 10px;
-            color: var(--cream);
-        }
-        
-        /* Hero section con imagen de ocre */
-        .product-hero {
-            background: url('https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover;
-            height: 500px;
-            display: flex;
-            align-items: flex-end;
-            position: relative;
-        }
-        
-        .hero-content {
-            background: rgba(194, 154, 107, 0.85);  /* Fondo semitransparente ocre */
-            width: 100%;
-            padding: 2rem;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-        
-        /* Selector de tonalidades de ocre */
-        .color-options {
-            display: flex;
-            gap: 15px;
-            margin: 1.5rem 0;
-        }
-        
-        .color-swatch {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid white;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-            transition: transform 0.3s;
-        }
-        
-        .color-swatch:hover {
-            transform: scale(1.1);
-        }
-        
-        /* Sección de producto */
-        .product-container {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-        
-        .product-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-        }
-        
-        .product-gallery img {
-            width: 100%;
-            border-radius: 8px;
-            transition: transform 0.3s;
-            cursor: zoom-in;
-        }
-        
-        .product-gallery img:hover {
-            transform: scale(1.02);
-        }
-        
-        .main-image {
-            grid-column: span 2;
-        }
-        
-        /* Detalles del producto */
-        .product-details h1 {
-            color: var(--ocre-dark);
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .product-type {
-            color: var(--ocre-medium);
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-        }
-        
-        .price {
-            font-size: 2.5rem;
-            color: var(--ocre-dark);
-            font-weight: 700;
-            margin: 1.5rem 0;
-        }
-        
-        .btn {
-            background: var(--ocre-dark);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .btn:hover {
-            background: var(--brown);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(92, 64, 51, 0.3);
-        }
-        
-        /* Características */
-        .features {
-            margin: 2rem 0;
-            border-top: 1px solid rgba(194, 154, 107, 0.3);
-            padding-top: 1.5rem;
-        }
-        
-        .feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .feature i {
-            color: var(--ocre-medium);
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .product-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocre Bayer Importado | Pigmentos Premium</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #E67E22;     /* Naranja vibrante */
+      --secondary: #D35400;   /* Naranja oscuro */
+      --accent: #27AE60;      /* Verde */
+      --light: #FEF9E7;       /* Amarillo claro */
+      --dark: #2C3E50;        /* Texto oscuro */
+      --highlight: #F1C40F;   /* Amarillo */
+      --whatsapp: #25D366;    /* Verde WhatsApp */
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex: 1;
+    }
+    
+    .product-header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .product-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .main-image-container {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+    
+    .main-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      transition: transform 0.3s ease;
+    }
+    
+    .main-image.zoomed {
+      transform: scale(1.05);
+      cursor: zoom-out;
+    }
+    
+    .thumbnail-container {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    .thumbnail {
+      width: 80px;
+      height: 80px;
+      background: white;
+      padding: 5px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+    
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .thumbnail.selected {
+      border: 3px solid var(--highlight);
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* Estilos para la descripción y precios */
+    .product-info {
+      display: flex;
+      margin-bottom: 40px;
+      gap: 30px;
+    }
+    
+    .product-details {
+      flex: 0 0 60%;
+    }
+    
+    .product-description {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+    
+    .product-description h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    
+    .features-list {
+      list-style-type: none;
+    }
+    
+    .features-list li {
+      padding: 8px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .features-list li:before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+    
+    .product-sidebar {
+      flex: 0 0 35%;
+    }
+    
+    .price-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      text-align: center;
+      border: 2px solid var(--highlight);
+    }
+    
+    .price {
+      font-size: 32px;
+      color: var(--primary);
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 20px;
+    }
+    
+    .discount {
+      background: var(--accent);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    
+    .whatsapp-btn {
+      background: var(--whatsapp);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      margin: 20px 0;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    
+    .whatsapp-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      background: #128C7E;
+    }
+    
+    .stock {
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .product-meta {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .meta-item {
+      display: flex;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #eee;
+    }
+    
+    .meta-label {
+      font-weight: bold;
+      min-width: 120px;
+      color: var(--primary);
+    }
+    
+    footer {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    
+    .copyright {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    
+    @media (max-width: 768px) {
+      .product-info {
+        flex-direction: column;
+      }
+      
+      .product-details, .product-sidebar {
+        flex: 0 0 100%;
+      }
+      
+      .main-image-container {
+        height: 300px;
+      }
+      
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    
+    /* Sección de Reseñas - ubicada debajo de la descripción */
+    .reviews {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .reviews h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .review {
+      border-bottom: 1px dashed #eee;
+      padding: 10px 0;
+    }
+    .review:last-child {
+      border-bottom: none;
+    }
+    .stars {
+      color: var(--highlight);
+      margin-bottom: 8px;
+    }
+    .review p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <i class="fas fa-palette"></i>
-                <span>TierraColor</span>
-            </div>
-            <nav>
-                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-search"></i></a>
-                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-user"></i></a>
-                <a href="#" style="color: white; margin-left: 1.5rem;"><i class="fas fa-shopping-cart"></i></a>
-            </nav>
-        </div>
-    </header>
+  <div class="container">
+    <div class="product-header">
+      <h1 class="product-title">Ocre Bayer Importado Bolivia </h1>
+      <p>Pigmento de la más alta calidad para profesionales</p>
+    </div>
     
-    <section class="product-hero">
-        <div class="hero-content">
-            <h1>Ocre Natural Premium</h1>
-            <p>Pigmento 100% mineral para artistas y restauradores</p>
-            
-            <div class="color-options">
-                <div class="color-swatch" style="background-color: #F5DEB3;" title="Ocre claro"></div>
-                <div class="color-swatch" style="background-color: #D2B48C;" title="Ocre arena"></div>
-                <div class="color-swatch" style="background-color: #C19A6B;" title="Ocre dorado"></div>
-                <div class="color-swatch" style="background-color: #8B6B3D;" title="Ocre oscuro"></div>
-                <div class="color-swatch" style="background-color: #5C4033;" title="Ocre tostado"></div>
-            </div>
+    <div class="gallery-container">
+      <div class="main-image-container">
+        <img src="../Documentos/Ocre/img/1.jpg" alt="Ocre Bayer Importado" id="mainImage" class="main-image" onclick="toggleZoom()">
+      </div>
+      
+      <div class="thumbnail-container">
+        <div class="thumbnail selected" onclick="changeImage('../Documentos/Ocre/img/1.jpg', this)">
+          <img src="../Documentos/Ocre/img/1.jpg" alt="Ocre Bayer 1">
         </div>
-    </section>
+        <div class="thumbnail" onclick="changeImage('../Documentos/Ocre/img/2.jpg', this)">
+          <img src="../Documentos/Ocre/img/2.jpg" alt="Ocre Bayer 2">
+        </div>
+        <div class="thumbnail" onclick="changeImage('../Documentos/Ocre/img/3.jpg', this)">
+          <img src="../Documentos/Ocre/img/3.jpg" alt="Ocre Bayer 3">
+        </div>
+        <div class="thumbnail" onclick="changeImage('../Documentos/Ocre/img/4.jpg', this)">
+          <img src="../Documentos/Ocre/img/4.jpg" alt="Ocre Bayer 4">
+        </div>
+      </div>
+    </div>
     
-    <main class="product-container">
-        <div class="product-gallery">
-            <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Ocre en polvo" class="main-image">
-            <img src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Textura del ocre">
-            <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Ocre aplicado">
+    <div class="product-info">
+      <div class="product-details">
+        <div class="product-description">
+          <h2>Descripción del Producto</h2>
+          <p>El Ocre Bayer Importado es un pigmento mineral de primera calidad, especialmente formulado para aplicaciones profesionales en:</p>
+          <ul class="features-list">
+            <li>Pinturas artísticas y decorativas</li>
+            <li>Revestimientos arquitectónicos</li>
+            <li>Restauración de bienes culturales</li>
+            <li>Industria cerámica y plásticos</li>
+            <li>Elaboración de concretos decorativos</li>
+            <li>Puedes pedir por paquetes, esto solo es una muestra de lo que te puedes llevar</li>
+            <li>Llevamos hasta su negocio ventas por paquetes .</li>
+          </ul>
+          <p>Presentación en sacos de 25 kg. Color estable a la luz y condiciones climáticas.</p>
         </div>
         
-        <div class="product-details">
-            <h1>Ocre Natural</h1>
-            <p class="product-type">Pigmento mineral en polvo</p>
-            
-            <div class="price">S/ 75.90</div>
-            
-            <div class="features">
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Extraído de yacimientos naturales</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>5 tonalidades disponibles</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Granulometría controlada (45 micras)</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Compatibilidad con múltiples aglutinantes</span>
-                </div>
+        <!-- Sección de Reseñas con 2 opiniones -->
+        <div class="reviews">
+          <h2>Reseñas de Clientes</h2>
+          <div class="review">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
-            
-            <button class="btn" onclick="addToCart()">
-                <i class="fas fa-shopping-cart"></i>
-                Añadir al carrito
-            </button>
-            
-            <div class="product-description" style="margin-top: 2rem;">
-                <h3><i class="fas fa-info-circle" style="color: var(--ocre-medium);"></i> Descripción</h3>
-                <p>Nuestro ocre natural es un pigmento mineral obtenido mediante procesos artesanales que preservan sus cualidades cromáticas. Ideal para:</p>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>Pintura artística al óleo, acrílico o acuarela</li>
-                    <li>Restauración de bienes culturales</li>
-                    <li>Revestimientos arquitectónicos</li>
-                    <li>Elaboración de cerámicas</li>
-                </ul>
-                
-                <h3 style="margin-top: 1.5rem;"><i class="fas fa-flask" style="color: var(--ocre-medium);"></i> Composición</h3>
-                <p>Óxidos de hierro naturales (>95%), sílice (<3%), aluminio (<2%). Libre de aditivos químicos.</p>
+            <p>"El producto es excelente, de alta calidad y muy duradero."</p>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+            <p>"Muy satisfecho con mi compra, lo recomiendo sin dudar."</p>
+          </div>
         </div>
-    </main>
+      </div>
+      
+      <div class="product-sidebar">
+        <div class="price-box">
+          <div>
+            <span class="old-price">Bs/ 40.00</span>
+            <span class="discount">20% OFF</span>
+          </div>
+          <div class="price">Bs/ 25.90</div>
+          <a href="https://wa.me/59171915777?text=Estoy%20interesado%20en%20el%20Ocre%20Bayer%20Importado" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+          </a>
+          <p class="stock">✔ Disponible en stock</p>
+        </div>
+        
+        <div class="product-meta">
+          <div class="meta-item">
+            <span class="meta-label">Categoría:</span>
+            <span>Pigmentos Minerales</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Marca:</span>
+            <span>Bayer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Origen:</span>
+            <span>Alemania</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Presentación:</span>
+            <span>Saco 25kg</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Código:</span>
+            <span>OC-BAY-25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      &copy; 2023 Ocre Bayer Importado. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script>
+    function changeImage(imageSrc, element) {
+      // Cambiar la imagen principal
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = imageSrc;
+      mainImage.classList.remove('zoomed');
+      
+      // Remover la clase 'selected' de todas las miniaturas
+      document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.remove('selected');
+      });
+      
+      // Añadir la clase 'selected' a la miniatura clickeada
+      element.classList.add('selected');
+      
+      // Mover el contenedor de la imagen principal al centro de la vista
+      document.querySelector('.main-image-container').scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }
     
-    <script>
-        // Interactividad
-        function addToCart() {
-            alert('Ocre añadido al carrito');
-            // Lógica real para añadir al carrito iría aquí
-        }
-        
-        // Cambiar imagen principal al hacer clic en miniaturas
-        document.querySelectorAll('.product-gallery img').forEach(img => {
-            img.addEventListener('click', function() {
-                if (!this.classList.contains('main-image')) {
-                    const mainImg = document.querySelector('.main-image');
-                    const tempSrc = mainImg.src;
-                    mainImg.src = this.src;
-                    this.src = tempSrc;
-                }
-            });
-        });
-        
-        // Selector de color interactivo
-        document.querySelectorAll('.color-swatch').forEach(swatch => {
-            swatch.addEventListener('click', function() {
-                const color = this.style.backgroundColor;
-                document.querySelector('.hero-content').style.backgroundColor = `rgba(${hexToRgb(color)}, 0.85)`;
-            });
-        });
-        
-        // Función auxiliar para convertir hex a rgb
-        function hexToRgb(hex) {
-            // Elimina el # si está presente
-            hex = hex.replace('#', '');
-            
-            // Convierte a valores RGB
-            const r = parseInt(hex.substring(0, 2), 16);
-            const g = parseInt(hex.substring(2, 4), 16);
-            const b = parseInt(hex.substring(4, 6), 16);
-            
-            return `${r}, ${g}, ${b}`;
-        }
-    </script>
+    function toggleZoom() {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.classList.toggle('zoomed');
+    }
+  </script>
 </body>
 </html>
+
